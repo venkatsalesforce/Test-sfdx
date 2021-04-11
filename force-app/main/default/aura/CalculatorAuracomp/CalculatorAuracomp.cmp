@@ -1,0 +1,18 @@
+<aura:component controller="Calculatorctrl" implements="flexipage:availableForRecordHome,force:appHostable">
+    <aura:attribute name="fnumber" type="integer"/>
+    <aura:attribute name="snumber" type="integer"/>
+    <aura:attribute name="result" type="integer"/>
+	<lightning:card>
+        <aura:set attribute="title">
+            Calculator Example
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:button label="Add" onclick="{!c.calculate}"  variant="brand"/>
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+            <p><ui:inputNumber label="First Number: " aura:id="fnum" value="{!v.fnumber}"/></p>
+            <p><ui:inputNumber label="Second Number: " aura:id="snum" value="{!v.snumber}"/></p>
+            <p><ui:inputNumber label="Result: " aura:id="Result" value="{!v.result}"/></p>
+        </p>    
+    </lightning:card>
+</aura:component>

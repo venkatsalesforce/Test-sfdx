@@ -28,6 +28,6 @@ private class TestCalculatorcls {
         calc.secondNumber =20;       
         calc.mult();
         Test.stopTest();
-        system.assertEquals(200, calc.result,'Calculator mult failed');        
+        system.assertEquals(2330, calc.result,'Calculator mult failed');        
     }
 }
